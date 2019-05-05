@@ -19,6 +19,7 @@ public class Main2Activity extends AppCompatActivity {
 
     ImageView imageDisplay;
     EditText txtEditor;
+    Bitmap image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +33,7 @@ public class Main2Activity extends AppCompatActivity {
         imageDisplay = (ImageView) findViewById(R.id.imageView);
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
-            Bitmap image = (Bitmap) extras.get("image");
+             image = (Bitmap) extras.get("image");
             if (image != null) {
                 imageDisplay.setImageBitmap(image);
             }
@@ -79,7 +80,8 @@ public class Main2Activity extends AppCompatActivity {
         else {
             Toast.makeText(getApplicationContext(),"SD Card Not found",Toast.LENGTH_LONG).show();
         }
-        Intent intent = new Intent(Main2Activity.this, MainActivity.class);
+        Intent intent = new Intent(Main2Activity.this, Main3Activity.class);
+        intent.putExtra("image", image);
         startActivity(intent);
     }
 
