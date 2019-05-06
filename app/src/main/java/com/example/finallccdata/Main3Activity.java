@@ -73,13 +73,14 @@ public class Main3Activity extends AppCompatActivity {
                 Mat inrangemat = new Mat();
                 Core.inRange(cvtcolormat, lowerThreshold , upperThreshold, inrangemat);
 
-                int n = (int)inrangemat.elemSize();
-                int m = (int)inrangemat.elemSize1();
+                //int n = (int)inrangemat.elemSize();
+                //int m = (int)inrangemat.elemSize1();
 
-                // have to perform the basic image proceing
 
                 //Mat lastmat2 = zeros(inrangemat.size(),CV_8UC1);
                 //Core.bitwise_and(myMat,lastmat,lastmat2,inrangemat);
+
+
 
                 Utils.matToBitmap(inrangemat, image);
                 imageDisplay3.setImageBitmap(image);
