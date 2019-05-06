@@ -82,6 +82,10 @@ public class Main3Activity extends AppCompatActivity {
                 Core.bitwise_and(inrangemat,myMat,lastmat2);*/
 
 
+                //Mat ckeckmat = new Mat();
+                //Core.bitwise_and(inrangemat,myMat,lastmat2);*/
+
+
 
                 Utils.matToBitmap(inrangemat, image);
                 imageDisplay3.setImageBitmap(image);
