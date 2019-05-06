@@ -76,7 +76,7 @@ public class Main3Activity extends AppCompatActivity {
                 int n = (int)inrangemat.elemSize();
                 int m = (int)inrangemat.elemSize1();
 
-                // have to perform the basic image proceing 
+                // have to perform the basic image proceing
 
                 //Mat lastmat2 = zeros(inrangemat.size(),CV_8UC1);
                 //Core.bitwise_and(myMat,lastmat,lastmat2,inrangemat);
